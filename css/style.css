@@ -44,97 +44,7 @@ li {
 }
 
 
-.details-card {
-    background: rgba(255, 255, 255, 0.795);
-    padding: 2rem;
-    backdrop-filter: blur(8px);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    border: 0.5px solid #f1f1f1;
-    width: 100%;
-}
 
-.details-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1),
-        -8px -8px 20px rgba(255, 255, 255, 0.9);
-}
-
-.details-card h5 {
-    color: #265367;
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-}
-
-.details-card h5::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 2px;
-    background: var(--support-brown);
-}
-
-.details-card ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.details-card li {
-    padding: 0.5rem 0;
-    position: relative;
-    padding-left: 1.5rem;
-    text-align: left;
-    color: #555;
-    transition: all 0.3s ease;
-}
-
-.details-card li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--support-brown);
-}
-
-.details-card li:hover {
-    color: var(--primary-blue);
-    transform: translateX(5px);
-}
-
-.grade-badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    margin: 0.25rem 0;
-    font-weight: 500;
-}
-
-.grade-distinction {
-    background: linear-gradient(135deg, var(--primary-blue), #1a3f4f);
-    color: white;
-}
-
-.grade-first {
-    background: linear-gradient(135deg, var(--support-brown), #574b1a);
-    color: white;
-}
-
-.grade-second {
-    background: #f0f0f0;
-    color: #333;
-}
-
-.grade-fail {
-    background: #ffeaea;
-    color: var(--accent-red);
-}
 
 .card-img-wrapper {
     --wrapper-size: 55px;
@@ -414,6 +324,7 @@ li {
 .apply-header-box:hover {
     transition: all 0.3s ease-in-out;
     box-shadow: 0 15px 35px rgba(117, 113, 113, 0.3);
+    background-color: #fff;
 }
 
 .apply-header-box2 h4,
@@ -946,3 +857,12 @@ li {
 }
 
 /* course details and objective css end */
+
+
+/* details section start =========  */
+
+.details-icon{
+    background-color: var(--primary-blue);
+}
+
+/* details section end */
