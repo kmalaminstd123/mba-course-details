@@ -779,13 +779,6 @@ li {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.section-header .divider {
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--primary-blue), var(--support-brown));
-    margin: 1.5rem auto;
-}
-
 .goal-item {
     position: relative;
     padding: 20px 10px;
@@ -866,3 +859,4 @@ li {
 }
 
 /* details section end */
+
