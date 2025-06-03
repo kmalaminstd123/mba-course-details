@@ -33,9 +33,7 @@ li {
 
 /* Add this to your existing CSS */
 
-.det-card-mt{
-    margin-top: 180px;
-}
+
 
 @media only screen and (max-width: 992px){
 
@@ -188,7 +186,7 @@ li {
 }
 
 .higher-faq-sec .accordion-header {
-    border-radius: 40px;
+    border-radius: 10px;
     overflow: hidden;
     border: 2px solid var(--support-brown);
 }
@@ -221,10 +219,23 @@ li {
     bottom: -9%;
     right: -18%;
     max-width: 285px;
+    width: 100%;
     height: 295px;
     border-radius: 8px;
     overflow: hidden;
 }
+
+@media only screen and (max-width: 727px){
+    .course-feature-b-card{
+        width: 88.1% !important;
+    }
+}
+
+/* @media only screen and (max-width: 590px){
+    .course-feature-b-card{
+        width: 70% !important;
+    }
+} */
 
 .exp-cont{
     position: absolute;
@@ -386,8 +397,8 @@ li {
 
 .apply-header-box,
 .apply-header-box2 {
-    background: linear-gradient(135deg, var(--accent-red), var(--primary-blue));
-    border-radius: 15px;
+    border: 2px solid var(--support-brown);
+    border-radius: 8px;
     padding: 15px 20px;
     margin-bottom: 30px;
     position: relative;
@@ -401,9 +412,8 @@ li {
 
 .apply-header-box2:hover,
 .apply-header-box:hover {
-    transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(117, 113, 113, 0.3);
 }
 
 .apply-header-box2 h4,
@@ -414,13 +424,13 @@ li {
 .apply-header-box2 p,
 .apply-header-box p {
     text-align: center;
-    color: #fff;
+    color: #1a1519;
     font-size: 19px;
     line-height: 1.6;
 }
 
 .ahb-icon {
-    background-color: #ffffff79;
+    background-color: var(--primary-blue);
     backdrop-filter: blur(10px);
     width: fit-content;
     height: 40px;
@@ -439,7 +449,7 @@ li {
     transform: translateX(-50%);
     background-color: var(--primary-blue);
     padding: 8px 20px;
-    border-radius: 40px;
+    border-radius: 10px;
     transition: all 0.5s ease;
     display: none;
     animation: fadeInup 1s ease;
@@ -576,12 +586,14 @@ li {
 .entry-check-mark {
     border: 0.5px solid var(--primary-blue);
     border-radius: 50%;
-    height: 30px;
-    width: 75px;
+    --check-size: 30px;
+    height: var(--check-size);
+    width: var(--check-size);
     color: var(--primary-blue);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px;
 }
 
 /* optional pretties */
@@ -633,6 +645,7 @@ li {
     align-items: center;
     position: relative;
     max-width: 900px;
+    width: 100%;
     margin: auto;
 }
 
@@ -707,14 +720,14 @@ li {
     color: #fff;
     padding: 10px 20px;
     font-weight: 500;
-    border-radius: 50px;
-    background-color: var(--support-brown);
+    background-color: var(--primary-blue);
     border: none;
+    border: 1px solid var(--primary-blue);
 }
 
 .prog-act:hover{
     color: #fff;
-    background-color: #594918;
+    background-color: var(--primary-blue);
 }
 
 
@@ -782,7 +795,7 @@ li {
 }
 
 .course-obj-modern {
-  padding: 90px 0;
+  padding: 35px 0 35px 0;
   background: #ffffff;
 }
 
@@ -836,7 +849,7 @@ li {
 }
 
 .custom-obj-list li::before {
-  content: "✔";
+  content: "-";
   position: absolute;
   left: 0;
   top: 0;
@@ -851,87 +864,85 @@ li {
 }
 
 /* Program Goals section */
-
-.program-goals{
-    margin: 80px 0;
-    background: linear-gradient(135deg, rgba(36, 81, 102, 0.03), rgba(113, 97, 38, 0.03));
+.program-goals {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.program-goals-section {
-    border-radius: 15px;
-    padding: 40px;
+.section-header .divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--support-brown));
+    margin: 1.5rem auto;
 }
 
-.goals-heading {
-    color: var(--primary-blue);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.goals-subtext {
-    color: var(--primary-brown);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.goals-description {
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.goal-card {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    height: 100%;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(113, 97, 38, 0.1);
+.goal-item {
     position: relative;
-    overflow: hidden;
-}
-
-.goal-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--primary-blue), var(--primary-brown));
-}
-
-.goal-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.goal-icon {
-    font-size: 2rem;
-    color: var(--primary-blue);
+    padding: 20px 10px;
     margin-bottom: 15px;
+    border-left: 4px solid var(--primary-blue);
+    background: #fff;
     transition: all 0.3s ease;
 }
 
-.goal-card:hover .goal-icon {
-    transform: scale(1.1);
-    color: var(--primary-brown);
+.goal-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.goal-card p {
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #444;
+.goal-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: var(--primary-blue);
+    color: #fff;
+    --circle-size: 35px;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.goal-item h3 {
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.goal-item p {
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 992px){
+    .det-card-mt{
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 768px) {
-    .goals-heading {
-        font-size: 2rem;
+    .goal-item {
+        margin-bottom: 2rem;
     }
-    
-    .goal-card {
-        margin-bottom: 20px;
+
+    .course-featrue-b-list{
+        margin-top: 75px;
+    }
+
+    .det-card-mt-md{
+        margin-top: 20px;
     }
 }
+
+@media only screen and (max-width: 375px){
+    .step-title{
+        font-size: 11px;
+    }
+}
+
 /* course details and objective css end */
