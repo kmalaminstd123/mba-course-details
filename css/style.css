@@ -23,10 +23,11 @@ li {
 
 /* Theme Colors */
 :root {
-  --primary-blue: #245166;
-  --accent-red: #A03232;
-  --support-brown: #716126;
+    --primary-blue: #245166;
+    --accent-red: #A03232;
+    --support-brown: #716126;
 }
+
 /* Theme Colors */
 
 
@@ -35,13 +36,9 @@ li {
 
 
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {}
 
-}
-
-@media only screen and (max-width: 768px){
-
-}
+@media only screen and (max-width: 768px) {}
 
 
 
@@ -124,7 +121,7 @@ li {
     position: relative;
 }
 
-.flyer-img-card{
+.flyer-img-card {
     position: absolute;
     bottom: -9%;
     right: -18%;
@@ -135,8 +132,8 @@ li {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 727px){
-    .course-feature-b-card{
+@media only screen and (max-width: 727px) {
+    .course-feature-b-card {
         width: 88.1% !important;
     }
 }
@@ -147,13 +144,13 @@ li {
     }
 } */
 
-.exp-cont{
+.exp-cont {
     position: absolute;
     bottom: -10%;
     left: 0;
 }
 
-.exp-cont a{
+.exp-cont a {
     width: fit-content;
     padding: 23px 80px;
     border-top-right-radius: 40px;
@@ -162,7 +159,7 @@ li {
     overflow: hidden;
 }
 
-.exp-cont a::after{
+.exp-cont a::after {
     content: '';
     height: 100%;
     width: 0%;
@@ -174,26 +171,26 @@ li {
     transition: all 0.6s linear;
 }
 
-.exp-cont a:hover::after{
+.exp-cont a:hover::after {
     width: 100%;
     transition: all 0.6s linear;
 }
 
-.exp-cont a span:nth-child(2){
+.exp-cont a span:nth-child(2) {
     position: relative;
     z-index: 2;
     color: #000;
     transition: all 0.6s linear;
 }
 
-.exp-cont a:hover span:nth-child(2){
+.exp-cont a:hover span:nth-child(2) {
     color: #fff;
     transition: all 0.6s linear;
 }
 
 
 
-.exp-cont a span:nth-child(1){
+.exp-cont a span:nth-child(1) {
     position: absolute;
     left: 2%;
     transform: translateX(0);
@@ -202,7 +199,7 @@ li {
     opacity: 0;
 }
 
-.exp-cont a:hover span:nth-child(1){
+.exp-cont a:hover span:nth-child(1) {
     transform: translateX(250px);
     color: #fff;
     transition: all 0.6s linear;
@@ -249,21 +246,22 @@ li {
     margin-bottom: 20px;
 }
 
-.cfbl-sub-header p{
+.cfbl-sub-header p {
     color: var(--accent-red);
     font-size: 18px;
     opacity: 0.8;
     font-weight: 500;
 }
 
-.feat-card-parent{
+.feat-card-parent {
     margin-bottom: 11px;
 }
 
 .program-feature-card {
     background-color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;/* subtle slide down */
+    transition: all 0.3s ease-in-out;
+    /* subtle slide down */
 }
 
 
@@ -276,7 +274,7 @@ li {
     height: 40px;
 }
 
-.l-s-card{
+.l-s-card {
     background-color: var(--primary-blue);
     border-radius: 5px;
     padding: 10px 15px;
@@ -288,7 +286,7 @@ li {
     color: var(--primary-blue);
 }
 
-.r-s-card{
+.r-s-card {
     margin-left: 30px;
 }
 
@@ -366,7 +364,7 @@ li {
     animation: fadeInup 1s ease;
 }
 
-.hovered-app-box p{
+.hovered-app-box p {
     color: #fff !important;
 }
 
@@ -509,7 +507,7 @@ li {
 
 /* optional pretties */
 .right-req-sec::-webkit-scrollbar-thumb {
-     background: var(--support-brown);
+    background: var(--support-brown);
 }
 
 .right-req-sec::-webkit-scrollbar-track {
@@ -546,7 +544,7 @@ li {
 
 /* stepper css start */
 
-#stepperSec{
+#stepperSec {
     margin: 80px 0;
 }
 
@@ -606,7 +604,7 @@ li {
 }
 
 #stepperSec .stepper-content-box {
-  border-color: var(--primary-blue);
+    border-color: var(--primary-blue);
 }
 
 .stepper-content-box {
@@ -620,14 +618,15 @@ li {
 .stepper-content-box.active {
     display: block;
 }
+
 /* stepper css end */
 
-.cours-obj-cont p{
+.cours-obj-cont p {
     font-size: 21px;
     color: var(--primary-blue);
 }
 
-.prog-act{
+.prog-act {
     color: #fff;
     padding: 10px 20px;
     font-weight: 500;
@@ -636,7 +635,7 @@ li {
     border: 1px solid var(--primary-blue);
 }
 
-.prog-act:hover{
+.prog-act:hover {
     color: #fff;
     background-color: var(--primary-blue);
 }
@@ -706,73 +705,78 @@ li {
 }
 
 .course-obj-modern {
-  padding: 35px 0 35px 0;
-  background: #ffffff;
+    padding: 35px 0 35px 0;
+    background: #ffffff;
 }
 
 /* Shared visual left */
-.obj-visual {
-  background-image: url('../images/coruse-obj.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  min-height: 350px;
-  border-radius: 12px;
-  position: relative;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+
+
+.featured-objective-card {
+    background: linear-gradient(45deg, var(--primary-blue), #0056b3);
+    /* Primary blue gradient */
+    /* You can replace this with an image */
+    /* background-image: url('path/to/your/feature-image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 
-.obj-overlay {
-  background: rgba(36, 81, 102, 0.85); /* Blue overlay */
-  color: #fff;
-  height: 100%;
-  padding: 40px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.obj-timeline-container {
+    position: relative;
+    padding-left: 30px;
+    /* Space for the vertical line */
 }
 
-.obj-overlay h2 {
-  font-weight: 800;
-  font-size: 28px;
-  margin-bottom: 15px;
+.obj-timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    /* Adjust to align with icons */
+    width: 2px;
+    height: 100%;
+    background-color: #dee2e6;
+    /* Light gray line */
 }
 
-.obj-overlay p {
-  font-size: 16px;
-  line-height: 1.6;
+.obj-timeline-item {
+    position: relative;
 }
 
-.custom-obj-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
+.timeline-icon {
+    z-index: 1;
+    /* Ensure icon is above the line */
+    background-color: #f8f9fa;
+    /* Match section background */
+    border-radius: 50%;
+    padding: 8px;
+    /* Padding around the icon */
+    box-shadow: 0 0 0 4px #fff;
+    /* White ring around icon */
 }
 
-.custom-obj-list li {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  font-size: 16px;
-  color: #333;
-  transition: all 0.3s ease;
+.obj-timeline-content {
+    position: relative;
 }
 
-.custom-obj-list li::before {
-  content: "-";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #716126;
+.obj-timeline-content::before {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    content: '';
+    --size: 12px;
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--primary-blue);
+    border-radius: 50%;
 }
 
-.custom-obj-list li:hover {
-  color: #A03232;
-  transform: translateX(4px);
+.badge {
+    font-size: 15px;
 }
+
 
 /* Program Goals section */
 .program-goals {
@@ -790,7 +794,7 @@ li {
 
 .goal-item:hover {
     transform: translateX(10px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .goal-number {
@@ -823,8 +827,8 @@ li {
     line-height: 1.6;
 }
 
-@media only screen and (max-width: 992px){
-    .det-card-mt{
+@media only screen and (max-width: 992px) {
+    .det-card-mt {
         margin-top: 40px;
     }
 }
@@ -834,17 +838,17 @@ li {
         margin-bottom: 2rem;
     }
 
-    .course-featrue-b-list{
+    .course-featrue-b-list {
         margin-top: 75px;
     }
 
-    .det-card-mt-md{
+    .det-card-mt-md {
         margin-top: 20px;
     }
 }
 
-@media only screen and (max-width: 375px){
-    .step-title{
+@media only screen and (max-width: 375px) {
+    .step-title {
         font-size: 11px;
     }
 }
@@ -854,9 +858,8 @@ li {
 
 /* details section start =========  */
 
-.details-icon{
+.details-icon {
     background-color: var(--primary-blue);
 }
 
 /* details section end */
-
