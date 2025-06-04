@@ -24,6 +24,57 @@
 
     <title>Document</title>
 
+
+    <style>
+
+ .main_container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Important to keep layout fixed height */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#menu li.active {
+  background-color: #265367;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto; /* ✅ scrollable */
+  scroll-behavior: smooth;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+    </style>
+
   
 
 </head>
@@ -914,6 +965,22 @@
         </div>
     </section>
     <!-- details section end -->
+
+<div class="main_container">
+  <div class="sidebar">
+    <ul id="menu">
+      <li data-target="section1" class="active">Research</li>
+      <li data-target="section2">Case Study</li>
+      <li data-target="section3">White Paper</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div id="section1" class="section">🔬 Research content here</div>
+    <div id="section2" class="section">📚 Case study content here</div>
+    <div id="section3" class="section">📄 White paper content here</div>
+  </div>
+</div>
+
 
 
 
