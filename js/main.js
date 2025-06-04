@@ -61,3 +61,39 @@ document.addEventListener('DOMContentLoaded', () => {
         certTag.style.transform = `rotate(${rotationDeg}deg)`;
     });
 })
+
+
+
+
+  const items = document.querySelectorAll("#menu li");
+  const sections = document.querySelectorAll(".section");
+  const content = document.querySelector(".content");
+
+  // Click to scroll
+  items.forEach(item => {
+    item.addEventListener("click", () => {
+      const targetId = item.dataset.target;
+      const targetEl = document.getElementById(targetId);
+      content.scrollTo({
+        top: targetEl.offsetTop - content.offsetTop,
+        behavior: "smooth"
+      });
+    });
+  });
+
+  // Scroll tracking
+  content.addEventListener("scroll", () => {
+    const scrollPos = content.scrollTop;
+
+    sections.forEach(section => {
+      const relativeTop = section.offsetTop - content.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const id = section.id;
+
+      if (scrollPos >= relativeTop && scrollPos < relativeTop + sectionHeight) {
+        items.forEach(i => i.classList.remove("active"));
+        const activeItem = document.querySelector(`#menu li[data-target="${id}"]`);
+        if (activeItem) activeItem.classList.add("active");
+      }
+    });
+  });
